@@ -72,6 +72,11 @@ def display_cereals_list(cereals_list):
 
 def calc_highest_protein(cereals_list, stats_dict):
     try:
+        if "Highest Protein" in stats_dict:
+            print("\nHighest Protein                                       Cereal")
+            print(f"{stats_dict['Highest Protein']:<51}{stats_dict['Highest Cereal']}")
+            return stats_dict
+
         if len(cereals_list) <= 1:
             print("The cereals list is empty.")
             return stats_dict
@@ -103,6 +108,11 @@ def calc_highest_protein(cereals_list, stats_dict):
 
 def calc_lowest_sugar(cereals_list, stats_dict):
     try:
+        if "Lowest Sugar" in stats_dict:
+            print("\nLowest Sugar                                          Cereal")
+            print(f"{stats_dict['Lowest Sugar']:<51}{stats_dict['Lowest Sugar Cereal']}")
+            return stats_dict
+
         if len(cereals_list) <= 1:
             print("The cereals list is empty.")
             return stats_dict
