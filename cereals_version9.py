@@ -245,9 +245,10 @@ def main():
     cereals = read_cereals_file(filename)
     cereals = convert_cereal_data(cereals)
 
+    print("Cereal Nutritional Analysis")
+
     while True:
         menu_text = (
-            "Cereal Nutritional Analysis\n"
             "--------------------------------------------------------------------------------\n"
             "Please choose from the following menu:\t\t\n"
             "Enter 1 to print the cereals list.\t\t\n"
