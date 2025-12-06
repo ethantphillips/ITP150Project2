@@ -1,6 +1,14 @@
+"""
+Ethan Phillips
+Project 2 - Cereal Nutritional Analysis
+ITP 150
+Date: 12/6/2025
+This program reads a CSV file containing cereal nutritional information
+and stores the data in a list of lists. Each inner list represents a cereal.
+"""
+
 import csv
 import json
-
 
 def read_cereals_file(filename):
     cereals_list = []
