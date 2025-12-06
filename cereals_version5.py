@@ -74,7 +74,7 @@ def calc_highest_protein(cereals_list, stats_dict):
     try:
         if "Highest Protein" in stats_dict:
             print("\nHighest Protein                                       Cereal")
-            print(f"{stats_dict['Highest Protein']:<51}{stats_dict['Highest Cereal']}")
+            print(f"{stats_dict['Highest Protein']:<51}{stats_dict['Highest Protein Cereal']}")
             return stats_dict
 
         if len(cereals_list) <= 1:
@@ -94,7 +94,7 @@ def calc_highest_protein(cereals_list, stats_dict):
         print(f"{highest_protein:<51}{highest_protein_cereal}")
 
         stats_dict["Highest Protein"] = highest_protein
-        stats_dict["Highest Cereal"] = highest_protein_cereal
+        stats_dict["Highest Protein Cereal"] = highest_protein_cereal
 
     except IndexError:
         print("IndexError: Problem accessing one of the cereal rows.")
